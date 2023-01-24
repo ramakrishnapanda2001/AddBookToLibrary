@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anchorred{
+            color:red;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="display-4">Add Book</div>
+        <div id="msg-label">
+            
+        </div>
+        <form id="book-form"> 
+            <div class="form-group">
+                <label for="title">Book Title<span style="color:red;">*</span></label>
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" class="form-control" id="isbn">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" >
+            </div>
+        </form>
+        <div class="display-4">Book List</div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody id="book-table-body"></tbody>
+
+        </table>
+    </div>
+    <script lang="javascript" src="app.js"></script>
+</body>
+</html>
